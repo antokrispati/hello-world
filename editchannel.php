@@ -4,7 +4,7 @@ $db = new database();
 ?>
 
 <h3>Edit Channel</h3>
-<form action="proseschannel.php?aksi=update" method="post">
+<form action="proseschannel.php?aksi=updatechannel" method="post">
 <?php
 foreach($db->editchannel($_GET['id']) as $d){
 ?>	

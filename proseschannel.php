@@ -7,11 +7,11 @@ if($aksi == "tambah"){
 	$db->inputchannel($_POST['lcn'],$_POST['channel_name']);
 	header("location:viewchannel.php");
 }
-elseif($aksi == "hapus"){
+elseif($aksi == "hapuschannel"){
 	$db->hapuschannel($_GET['id']);
 	header("location:viewchannel.php");
 }
-elseif($aksi == "update"){
+elseif($aksi == "updatechannel"){
 	$db->updatechannel($_POST['id'],$_POST['lcn'],$_POST['channel_name']);
 	header("location:viewchannel.php");
 }
